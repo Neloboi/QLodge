@@ -1,0 +1,81 @@
+@{
+    ViewBag.Title = "Contact";
+}
+
+<head>
+    <style>
+      body { background-color:white}
+      #map-outer {  height: 440px;
+	  				padding: 20px;
+					border: 2px solid #CCC;
+					margin-bottom: 20px;
+					background-color:#FFF }
+	  #map-container { height: 400px }
+      
+	  media all and (max-width: 991px) {
+		#map-outer { height: 650px }
+		}
+    </style>
+</head>
+<h2>Contact Information</h2>
+
+
+<div class="container">
+    <div class="row">
+        <div id="map-outer" class="col-md-12">
+            <div id="address" class="col-md-4">
+                <h3>Our Location</h3>
+                <address>
+                    14 Nelson Mandela Drive<br />
+                    Standerton<br />
+                    <abbr title="Phone">Tel:</abbr>
+                    071 655 7788
+                </address>
+                <address>
+                    <strong>Enquiries:</strong>   <a href="mailto:info@qlodge.co.za">info@qlodge.co.za</a><br />
+                </address>
+            </div>
+            <div id="map-container" class="col-md-8" style="position:relative">
+
+            </div>
+        </div><!-- /map-outer -->
+    </div> <!-- /row -->
+</div>
+
+    
+
+   
+
+    @section Scripts{
+        <script src="https://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false&amp;key=AIzaSyB7iQ8GXCaECgk7PcitvQyHxSzGUoCHBxM	"></script>
+        
+        <script>
+            function init_map() {
+                var location = new google.maps.LatLng(-26.972468, 29.262266);
+
+                var mapCanvas = document.getElementById('map-container');
+
+                var mapOptions = {
+                    center: location,
+                    zoom: 14,
+                    panControl: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map,
+                    title: "Q's Lodge"
+                });
+
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+
+                marker.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+
+
+    }
+    
