@@ -7,7 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body style="background-color:#4a80b0">
+<body style="background-color:lightskyblue">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -20,7 +20,7 @@
             </div>
             <div class="navbar-collapse collapse" style="font-family: Harrington; font-size:large;">
                 <ul class="nav navbar-nav" style="align-items:center;">
-                    <li> <span class="btn btn-primary">@Html.ActionLink("Accomodation", "Accomodation", "Home")</span></li>
+                    <li> @Html.ActionLink("Accomodation", "Accomodation", "Home")</li>
                     <li>@Html.ActionLink("About Q's", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Q's", "Contact", "Home")</li>
                 </ul>

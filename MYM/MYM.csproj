@@ -162,6 +162,15 @@
     <Content Include="Images\home1.jpg" />
     <Content Include="Images\home2.jpg" />
     <Content Include="Images\home3.jpg" />
+    <Content Include="Images\Rooms\Emlanjeni.jpg" />
+    <Content Include="Images\Rooms\Nkandla.jpg" />
+    <Content Include="Images\Rooms\tv.jpg" />
+    <Content Include="Images\Rooms\tea.jpg" />
+    <Content Include="Images\Rooms\Venice.jpg" />
+    <Content Include="Images\Rooms\washingtonjpg.jpg" />
+    <Content Include="Images\Rooms\wifi.png" />
+    <Content Include="Images\Rooms\ibhubesi.jpg" />
+    <Content Include="Images\Rooms\zanzibar.jpg" />
     <Content Include="Scripts\ai.0.22.19-build00125.js" />
     <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\bootstrap.js" />
