@@ -23,8 +23,8 @@ textarea {
     max-width: 280px;
 }
 
-.navbar-inverse { 
-    background-color: saddlebrown !important; 
+.navbar-inverse {
+    background-color: rgb(144, 86, 36); 
 }
 
 .carousel-inner > .item > img,

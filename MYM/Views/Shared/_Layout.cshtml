@@ -7,9 +7,9 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body style="background-color: burlywood">
+<body style="background-color:#4a80b0">
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container" style="background-color: saddlebrown">
+        <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -18,16 +18,16 @@
                 </button>
                 <span style="font-family: Harrington">@Html.ActionLink("Q's Lodge", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</span>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav" style="align-items:center">
-                    <li>@Html.ActionLink("Accomodation", "Accomodation", "Home")</li>
+            <div class="navbar-collapse collapse" style="font-family: Harrington; font-size:large;">
+                <ul class="nav navbar-nav" style="align-items:center;">
+                    <li> <span class="btn btn-primary">@Html.ActionLink("Accomodation", "Accomodation", "Home")</span></li>
                     <li>@Html.ActionLink("About Q's", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Q's", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content" style="background-color: darkolivegreen">
+    <div class="container body-content" style="background-color:#7e7e31">
         @RenderBody()
         <hr />
         <footer>
